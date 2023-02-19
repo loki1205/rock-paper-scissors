@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container noSelect">
+        <section class="left-section">
+            <h1 class="title">
+                <span>L</span>
+                <span>E</span>
+                <span>T</span>
+                <span>'</span>
+                <span>S</span>
+                <span id="whitespace"></span>
+                <span>P</span>
+                <span>L</span>
+                <span>A</span>
+                <span>Y</span>
+                <span>!</span>
+            </h1>
+        </section>
+        <section class="middle-section">
+            <div class="computer-details">
+                <h1 id="computer-current" class="computer-current"></h1>
+                <p id="c-score" class="computer-score">0</p>
+                <p>Computer</p>
+            </div>
+            <div class="versus">
+                <h1>X</h1>
+            </div>
+            <div class="user-details">
+                <h1 id="user-current" class="user-current"></h1>
+                <p id="u-score" class="user-score">0</p>
+                <p>You</p>
+            </div>
+        </section>
+        <section class="right-section">
+            <div id="img" class="images">
+                <img id="user-rock" src="https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/images/raised-fist_270a.png" alt="rock">
+                <img id="user-paper" src="https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/images/hand-with-fingers-splayed_1f590-fe0f.png" alt="paper">
+                <img id="user-scissors" src="https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/images/victory-hand_270c-fe0f.png" alt="scissors">
+            </div>
+            <p id="choose" class="choose">Choose One!</p>
+            <p id ="reset" class="restart hide">Restart Game?</p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    z-index: 1;
+}
+
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
+}
+
+
+@font-face {
+    font-family: "Post";
+    src: url("https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/fonts/PostRegular.woff2")
+        format("woff2"),
+      url("https://praxeds.github.io/theodinproject-rock-paper-scissors/assets/fonts/PostRegular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.left-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color:rgb(30,30,30);
+    font-family: "Post";
+}
+
+.title{
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+body>main>section>h1>span:nth-of-type(1)
+{
+    color: #3b64d9;
+}
+
+body>main>section>h1>span:nth-of-type(2)
+{
+    color: #e46892;
+}
+
+body>main>section>h1>span:nth-of-type(3)
+{
+    color: #f0ac0f;
+}
+
+body>main>section>h1>span:nth-of-type(4)
+{
+    color: #e44535;
+}
+
+body>main>section>h1>span:nth-of-type(5)
+{
+    color: #6eb179;
+}
+
+body>main>section>h1>span:nth-of-type(7)
+{
+    color: #4399dd;
+}
+
+body>main>section>h1>span:nth-of-type(8)
+{
+    color: #f06b0b;
+}
+
+body>main>section>h1>span:nth-of-type(9)
+{
+    color: #f0ac0f;
+}
+
+body>main>section>h1>span:nth-of-type(10)
+{
+    color: #3b64d9;
+}
+
+
+body>main>section>h1>span:nth-of-type(11)
+{
+    color: #e44535;
+}
+
+.right-section{
+    flex:1;
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width:150px;
+    cursor: pointer;
+}
+
+.images{
+    margin-bottom: 90px;
+    animation: animate 0.25s alternate-reverse infinite;
+}
+
+@keyframes animate {
+    from{
+        margin-bottom:50px
+    }
+    to{
+        margin-bottom: 60px;
+    }
+}
+
+.hide{
+    display:none
+}
+
+.win{
+    color:rgb(255, 255, 55);
+}
+
+.middle-section{
+    font-family: "Cabin", sans-serif;
+    color: #6eb179;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+}
+
+.computer-details{
+    margin-right: 25px;
+}
+
+.computer-score, .user-score{
+    font-size: 64px;
+    margin: 0;
+}
+
+.computer-current,.user-current{
+    font-size: 48px;
+}
+
+.user-details{
+    margin-left: 25px;
+}
+
+#reset{
+    cursor: pointer;
+    z-index: 999;
+}
+
+@media only screen and (max-width:912px)
+{
+    .container{
+        flex-direction: column;
+    }
+
+    img{
+        width:100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 300px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .right-section{
+        min-height: calc(50vh-50px);
+        flex:1;
+    }
+    .left-section{
+        flex:1;
+    }
+    .middle-section{
+        margin-bottom: 150px;
+        padding:25px
+    }
+
+}
