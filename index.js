@@ -140,7 +140,9 @@ document.getElementById("reset").onclick = function(){
     document.getElementById("reset").classList.add("hide");
     document.getElementById("c-score").classList.remove("win");
     document.getElementById("u-score").classList.remove("win");
-    document.getElementById("img").style.animation="animate 0.25s alternate-reverse infinite;";
+    document.getElementById("img").style.animation="animate 0.25s alternate-reverse infinite;"
+    computerScore=0;
+    userScore=0;
 };
 
 function winTone(){
